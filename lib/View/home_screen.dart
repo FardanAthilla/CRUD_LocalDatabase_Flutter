@@ -35,10 +35,22 @@ class HomeScreen extends GetView<HomeController> {
                           ),
                         ),
                         subtitle: Text(controller.allData[index]['desc']),
-                        trailing: IconButton(
-                          icon: const Icon(Icons.delete),
-                          onPressed: () => controller.deleteDataAndShowSnackbar(
-                              controller.allData[index]['id']),
+                        trailing: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            IconButton(
+                              icon: const Icon(Icons.edit),
+                              onPressed: () => controller.showBottomSheet (
+                                controller.allData[index]['id'],
+                              ),
+                            ),
+                            IconButton(
+                              icon: const Icon(Icons.delete),
+                              onPressed: () => controller.deleteDataAndShowSnackbar(
+                                controller.allData[index]['id'],
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),

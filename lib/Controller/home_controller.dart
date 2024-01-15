@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:notebook/DBHelper/db_helper.dart';
+import 'package:notebook/DB/db_helper.dart';
 
 class HomeController extends GetxController {
   RxBool isLoading = true.obs;
