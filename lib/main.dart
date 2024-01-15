@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:notebook/home_screen.dart';
+import 'package:notebook/Controller/home_controller.dart';
+import 'package:notebook/View/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
